@@ -7,12 +7,63 @@
 
 % Pas na deze inleidende paragraaf komt de eerste sectiehoofding.
 
-Dit hoofdstuk bevat je literatuurstudie. De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
+ % Dit hoofdstuk bevat je literatuurstudie. De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
 
-Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz.\ naar je bronnen. In \LaTeX{} kan dat met het commando \texttt{$\backslash${textcite\{\}}} of \texttt{$\backslash${autocite\{\}}}. Als argument van het commando geef je de ``sleutel'' van een ``record'' in een bibliografische databank in het Bib\LaTeX{}-formaat (een tekstbestand). Als je expliciet naar de auteur verwijst in de zin (narratieve referentie), gebruik je \texttt{$\backslash${}textcite\{\}}. Soms is de auteursnaam niet expliciet een onderdeel van de zin, dan gebruik je \texttt{$\backslash${}autocite\{\}} (referentie tussen haakjes). Dit gebruik je bv.~bij een citaat, of om in het bijschrift van een overgenomen afbeelding, broncode, tabel, enz. te verwijzen naar de bron. In de volgende paragraaf een voorbeeld van elk.
+ %M Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz.\ naar je bronnen. In \LaTeX{} kan dat met het commando \texttt{$\backslash${textcite\{\}}} of \texttt{$\backslash${autocite\{\}}}. Als argument van het commando geef je de ``sleutel'' van een ``record'' in een bibliografische databank in het Bib\LaTeX{}-formaat (een tekstbestand). Als je expliciet naar de auteur verwijst in de zin (narratieve referentie), gebruik je \texttt{$\backslash${}textcite\{\}}. Soms is de auteursnaam niet expliciet een onderdeel van de zin, dan gebruik je \texttt{$\backslash${}autocite\{\}} (referentie tussen haakjes). Dit gebruik je bv.~bij een citaat, of om in het bijschrift van een overgenomen afbeelding, broncode, tabel, enz. te verwijzen naar de bron. In de volgende paragraaf een voorbeeld van elk.
 
-\textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
+ % \textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
 
-Let er ook op: het \texttt{cite}-commando voor de punt, dus binnen de zin. Je verwijst meteen naar een bron in de eerste zin die erop gebaseerd is, dus niet pas op het einde van een paragraaf.
+ %Let er ook op: het \texttt{cite}-commando voor de punt, dus binnen de zin. Je verwijst meteen naar een bron in de eerste zin die erop gebaseerd is, dus niet pas op het einde van een paragraaf.
 
-\lipsum[7-20]
+
+Om de titel en onderzoek te verduidelijken, wordt er eerst onderzoek verricht naar verschillende relevante aspecten van het onderwerp. Onderdelen zoals Governance Frameworks, ISO, IEC, IEEE, NIST & COBIT komen ter sprake.
+
+
+
+\subsection{Governane Frameworks}
+
+De digitale wereld blijft groeien waardoor Information Technology een belangrijkere rol begint te spelen in organisaties; Specifieker, organisaties die Microsoft365 implementeren in hun infrastructuur.
+IT governance is het proces waarbij beslissingen worden gemaakt rond IT investments. Elke organisatie heeft wel een level van IT governance verwerkt, maar vaak is dit niet volledig gestructureerd en ontbreken er policies en is het heel informeel. \autocite{Symons2005}
+Microsoft365 Governance Frameworks zijn dus gericht op policies, guidelines en best practices voor een bedrijf die M365 implementeert. De bedoeling hiervan is het waarborgen van efficiëntie van M365 services maar terwijl ook de veiligheid en compliance van de organisatie te garanderen.
+
+
+\subsection{Azure Cloud Governance}
+
+Het basis principe van cloud computing is dat een bedrijf in plaats van eigen hardware aan te kopen en beheren, dat ze resources huren van een cloud provider. Met als voordeel dat je alleen betaalt, wat je verbruikt. \autocite{Mikkola2021}
+De cloud computing market heeft een grote sprong gemaakt in de IT wereld tijdens de Covid-19 pandemie, de combinatie met IT en remote werk zorgde voor een grote sprong in deze markt.
+Natuurlijk zijn er verschillende Cloud Computing Deployment Models:
+
+\begin{itemize}
+    \item Private cloud:
+    Dit is een cloud infrastructuur gemaakt voor één organisatie en niet meer. Dit kan dus on-premise beheerd worden of remote.
+    Een reden om voor Private cloud te kiezen, is dat een eenvoudige manier is om gevoelige data en informatie te beveiligen en isoleren. \autocite{Mikkola2021}
+    \item Public cloud:
+    Dit is de cloud infrastructuur gemaakt voor publiek gebruik en wordt beheerd on premise door de Cloud provider.
+    \item Hybrid cloud:
+    Dit is de combinatie van de 2 voorgaande deployment models. Verschillende onderdelen binnen deze infrastuctuur zijn privaat, waar anderen dan weer publiekelijk zijn. Dit hangt volledig af van de voorafgeschreven scenario's.
+\end{itemize}
+
+Natuurlijk vraagt men zich af wat de voordelen nu zijn van Cloud Computing. Door de immense groei van toename in gebruikers van cloud computing, geeft dit ook een teken dat hier voordelen aan gekoppeld zijn.
+
+\begin{itemize}
+    \item Scalability:
+    De mogelijkheid hebben om je resources te scalen gebaseerd op gebruik, verbruik en vraag. \autocite{Mikkola2021}
+    \item Security:
+    De security van de cloud infrastructuur is up-to-date en wordt regelmatig geüpdate naargelang de meest recente security threats.
+    \item Geen overnodige on-premise hardware:
+    De overbodige on-premise hardware wordt vervangen door een cloud dat remote te besturen is, dit is financieel heel voordelig.
+    \item Return of Investment (ROI):
+    Doordat een organisatie zelf in handen hebben, hoeveel er verbruikt kan worden binnenin hun organisatie. Hebben ze ook meer in hand wat de effectieve ROI zou zijn. Dit biedt een vooruitzicht op financiele doeleinden.
+\end{itemize}
+
+
+\subsection{ISO/IEC}
+
+De International Organization for Standardization (ISO) is een 
+
+
+
+
+
+
+
